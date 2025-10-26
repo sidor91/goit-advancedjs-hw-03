@@ -11,9 +11,23 @@
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <div class="container">
+        <form id="searchForm">
+          <input
+            class="input"
+            type="text"
+            name="search"
+            placeholder="Search images..."
+            required
+          />
+          <button class="submit-btn" type="submit">Search</button>
+        </form>
+         <div class="loader-container">
+          <p class="loader-message">Loading images, please wait...</p>
+          <span class="loader"></span>
+        </div>
+        <ul class="gallery"></ul>
+      </div>
     </main>
 
     <load src="./partials/footer.html" />
